@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>André's Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="styles.css" class="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>André</h1>
+		<div id="menuJS" class="menu">
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+	</header>
+	<main>
+		<section class="intro" id="about">
+			<img class="profile-pic" src="/assets/mepic.jpg" alt="Pic of Me.jpg">
+			<h1>Hi, I'm André, a Jr Web developer and this is <span>my portfolio</span></h1>
+			<p>I am a  Jr Web developer with a passion for creating dynamic and responsive websites. Additionally with the knowledge of developing scripts and apps for 7+ years</p>
+		</section>
+		<section class="buttons">
+			<a href="#contact" class="btn-primary">Get in Touch</a>
+			<a href="#" class="btn-secondary">Download CV</a>
+		</section>
+		<div class="divider">
+			<p>Experience With:</p>
+		</div>
+		<section class="skills-icons">
+			<img src="/assets/JavaScript_Logo.png" alt="JavaScript Logo">
+			<img src="/assets/HTML_Logo.png" alt="HTML Logo">
+			<img src="/assets/CSS_Logo.png" alt="CSS Logo">
+			<img src="/assets/Skript_Logo.png" class="img-alt" alt="Skript Logo">
+		</section>
+		<section class="project-section" id="projects">
+			<h1>Projects</h1>
+			<div class="project-cards">
+				<a href="https://foodspotbyandrealead2.netlify.app/">
+				<div class="project-card">
+					<img src="/assets/FoodSpot_Logo.jpg" alt="FoodSpot" class="bannerimg">
+					<div class="cardcontent">
+						<div class="cardtext">
+							<h2>FoodSpot</h2>
+							<p>A business website for a resturant with a focus on user experience and responsive design.</p>
+						</div>
+						<img src="/assets/Arrow-Icon.svg" alt="Arrow" class="arrowimg">
+					</div>
+				</div>
+				</a>
+				<a href="https://herorecreation2.netlify.app/">
+				<div class="project-card">
+					<img src="/assets/Arise_Logo.png" alt="Arise" class="bannerimg">
+					<div class="cardcontent">
+						<div class="cardtext">
+							<h2>Arise</h2>
+							<p>An e-commerce website built with a focus on user experience and display.</p>
+						</div>
+						<img src="/assets/Arrow-Icon.svg" alt="Arrow" class="arrowimg">
+					</div>
+				</div>
+				</a>
+				<a href="https://mp3bot.net/">
+					<div class="project-card">
+						<img src="/assets/Banner.png" alt="Mp3-Bot" class="bannerimgalt">
+						<div class="cardcontent">
+							<div class="cardtext">
+								<h2>Mp3-Bot</h2>
+								<p>My very own web app, Mp3-Bot plays music from files on social media discord, it is currently used by 13,000+ Servers.</p>
+							</div>
+							<img src="/assets/Arrow-Icon.svg" alt="Arrow" class="arrowimg">
+						</div>
+					</div>
+				</a>
+				<a href="https://youtubeclonebyandrealead.netlify.app/">
+					<div class="project-card">
+						<img src="/assets/youtubeclone.jpg" alt="YoutubeClone" class="bannerimgalt">
+						<div class="cardcontent">
+							<div class="cardtext">
+								<h2>Youtube Clone</h2>
+								<p>A project which recreates youtube and showcases my ability to develop responsive and detailed websites.</p>
+							</div>
+							<img src="/assets/Arrow-Icon.svg" alt="Arrow" class="arrowimg">
+						</div>
+					</div>
+				</a>
+		</section>
+		<section class="experience-section" id="experience">
+			<h1>Experience</h1>
+			<div class="first-experience">
+				<div class="expheader">
+					<h2>Lead developer at mp3-bot</h2>
+					<p>Jan 2023 - Present</p>
+				</div>
+				<p class="exptext">For 2+ years now I have been the lead developer for mp3-Bot, 
+					an online application which plays audio files on the social media platform discord.
+					As it was my own creation I managed all aspects of the development from coding to deployment and maintenance.
+					Aswell as handling all user support and feedback to ensure a smooth user experience which included responding to
+					user tickets and implementing new features based on user requests.
+				</p>
+				
+			</div>
+		<a href="https://codepen.io/AndreAJA"><img src="/assets/codepen_logo.svg" alt="codepen_logo" class="linkssec"></a>
+		</section>
+	</main>
+	<footer>
+		<div class="footerinfo" id ="contact">
+			<h1>Contact</h1>
+			<p>andrepe.aa100@gmail.com</p>
+		</div>
+		<div class="footerboxes">
+			<form>
+				<input type="text" placeholder="Your Email">
+				<textarea placeholder="Your Message"></textarea>
+			</form>
+			<a href="#" class="btn-primary">Send Message</a>
+		</div>
+		
+	</footer>
+	<script>
+		function toggleMenu(){
+			const menu = document.getElementById("menuJS");
+			menu.classList.toggle("active");
+		}
+	</script>
+</body>
+</html>
